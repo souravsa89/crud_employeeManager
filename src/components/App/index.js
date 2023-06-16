@@ -17,7 +17,7 @@ const App = () => {
       ) : (
         <Login setIsAuthenticated={setIsAuthenticated} />
       )}
-    </>
+          </>
   );
 };
 
