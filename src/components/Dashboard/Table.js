@@ -1,6 +1,6 @@
 import React from "react";
 
-const Table = ({ employees, handleEd, handleDelete }) => {
+const Table = ({ employees, handleEdit, handleDelete }) => {
   employees.forEach((employee, i) => {
     employee.id = i + 1;
   });
@@ -39,7 +39,7 @@ const Table = ({ employees, handleEd, handleDelete }) => {
                 <td>{employee.date} </td>
                 <td className="text-right">
                   <button
-                    onClick={() => handleEd(employee.id)}
+                    onClick={() => handleEdit(employee.id)}
                     className="button muted-button"
                   >
                     Edit
