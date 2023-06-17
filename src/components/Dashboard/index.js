@@ -61,7 +61,7 @@ const Dashboard = ({ setIsAuthenticated }) => {
         <>
           <Header
             setIsAdding={setIsAdding}
-            setIsAuthenticated={setIsAuthenticate}
+            setIsAuthenticated={setIsAuthenticated}
           />
           <Table
             employees={employees}
