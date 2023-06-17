@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
-const Table = ({ employees, handleEdit, handleDelete }) => {
+const Table = ({ employees, handleEd, handleDelete }) => {
   employees.forEach((employee, i) => {
     employee.id = i + 1;
   });
 
-  const formatter = new Intl.NumberFormat('en-US', {
-    style: 'currency',
-    currency: 'USD',
+  const formatter = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
     minimumFractionDigits: null,
   });
 
@@ -39,7 +39,7 @@ const Table = ({ employees, handleEdit, handleDelete }) => {
                 <td>{employee.date} </td>
                 <td className="text-right">
                   <button
-                    onClick={() => handleEdit(employee.id)}
+                    onClick={() => handleEd(employee.id)}
                     className="button muted-button"
                   >
                     Edit
